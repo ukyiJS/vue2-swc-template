@@ -2,6 +2,9 @@
   "name": "vue-build-test",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.14.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "rm -rf ./dist && cross-env NODE_ENV=production webpack",
@@ -42,5 +45,8 @@
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpackbar": "^5.0.2"
+  },
+  "volta": {
+    "node": "16.14.0"
   }
 }
